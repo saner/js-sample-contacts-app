@@ -1,0 +1,152 @@
+#wrapper {
+	width: 900px;
+	margin: 0px auto;
+	box-shadow: 0px 2px 6px Gray;
+}
+
+#login-panel {
+	background-color: #3A3A3A;
+	overflow: hidden;
+	padding: 0px 10px;
+	box-shadow: 0px 3px 5px Gray;
+}
+
+#login-panel .button {
+	float:right;
+	display: inline-block;
+	padding: 10px;
+	color: White;
+	text-decoration: None;
+}
+
+#login-panel .button:hover {
+	color: Red;
+}
+
+.message-box {
+	box-sizing: border-box;
+	width: 400px;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -200px;
+	background-color: Gray;
+	box-shadow: 3px 3px 9px Gray;
+	border-radius: 4px;
+	padding: 10px 20px;
+}
+
+.message-box .label {
+	padding: 20px;
+	text-align: center;
+	color: White;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px black;
+}
+
+.message-box .label {
+	padding: 20px 0px;
+}
+
+.message-box #content label {
+	width: 90px;
+	text-align: right;
+	display: inline-block;
+	margin: 20px;
+	color: White;
+}
+
+.message-box #content input[type="text"] {
+	width: 200px;
+}
+
+.message-box #content input[type="submit"] {
+	width: 100px;
+	height: 30px;
+	float: right;
+	margin-right: 20px;
+}
+
+#tabs {
+	margin: 50px 0px 0px 0px;
+}
+
+#tabs #list ul {
+	list-style: none;
+}
+
+#tabs #list ul li {
+	display: inline-block;
+}
+
+#tabs #list ul li a {
+	text-decoration: none;
+	display: block;
+	padding: 5px 10px;
+}
+
+#tabs #content {
+	padding: 20px 10px;
+}
+
+#contacts {
+	overflow: hidden;
+}
+
+#contacts #list {
+	float: left;
+	display: inline-block;
+	width: 200px;
+}
+
+#contacts #list ul li {
+	display: block;
+	cursor: pointer;
+	padding: 10px;
+}
+
+#contacts #list ul li:hover {
+	color: Red;
+}
+
+#contacts #content {
+	float: left;
+	display: inline-block;
+	width: 600px;
+	padding: 0px;
+}
+
+#contacts #content h3 {
+	margin-bottom: 10px;
+}
+
+#contacts td {
+	padding: 0px 5px;
+}
+
+
+#new-contact {
+	width: 600px;
+}
+
+#new-contact label,
+#new-contact input[type="text"] {
+	width: 200px;
+	display: block;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#new-contact label {
+	text-align: right;
+	padding-right: 10px;
+}
+
+#new-contact br {
+	clear: left;
+}
+
+#new-contact input[type="submit"] {
+	margin-left: 330px;
+}
+
