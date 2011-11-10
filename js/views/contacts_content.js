@@ -1,5 +1,5 @@
 App.ContactsContent = App.BaseContent.extend({
-	elementId: "ContactsContent",
+  elementId: "ContactsContent",
 
   mouseDown: function() {
  //   window.alert("D");

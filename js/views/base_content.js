@@ -1,9 +1,9 @@
 App.BaseContent = SC.View.extend({
-	tagName: "div",
+  tagName: "div",
 
-	selectedTabBinding: "App.appController.selectedTab",
+  selectedTabBinding: "App.appController.selectedTab",
 
-	isVisible: function() {
-		return this.get('elementId') == this.get('selectedTab');
-	}.property('selectedTab').cacheable()
+  isVisible: function() {
+    return this.get('elementId') == this.get('selectedTab');
+  }.property('selectedTab').cacheable()
 });
