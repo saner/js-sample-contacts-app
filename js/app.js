@@ -1,1 +1,1 @@
-var App = SC.Application.create();
+var App = Ember.Application.create();

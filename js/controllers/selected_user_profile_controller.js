@@ -1,3 +1,3 @@
-App.selectedUserProfileController = SC.Object.create({
+App.selectedUserProfileController = Ember.Object.create({
   content: null
 });

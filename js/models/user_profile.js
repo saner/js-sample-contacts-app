@@ -1,4 +1,4 @@
-App.UserProfile = SC.Object.extend({
+App.UserProfile = Ember.Object.extend({
   firstName: null,
   lastName: null,
   email: null,

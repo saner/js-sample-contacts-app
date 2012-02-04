@@ -1,4 +1,4 @@
-App.appController = SC.Object.create({
+App.appController = Ember.Object.create({
   selectedTab: "ContactsContent",
 
   isLoggedIn: false,

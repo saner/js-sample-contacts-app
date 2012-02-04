@@ -73,6 +73,7 @@
 
 #tabs #list ul {
 	list-style: none;
+  margin: 0px 10px;
 }
 
 #tabs #list ul li {
@@ -105,13 +106,17 @@
 }
 
 #contacts #list ul li {
+  margin-right: 20px;
+}
+
+#contacts #list ul li {
 	display: block;
 	cursor: pointer;
-	padding: 10px;
+	padding: 3px 5px;
 }
 
 #contacts #list ul li.is-selected {
-  background-color: LightGreen;
+  background-color: LightBlue;
 }
 
 #contacts #list ul li:hover {

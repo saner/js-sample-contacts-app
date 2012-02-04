@@ -1,4 +1,4 @@
-App.BaseContent = SC.View.extend({
+App.BaseContent = Ember.View.extend({
   tagName: "div",
 
   selectedTabBinding: "App.appController.selectedTab",

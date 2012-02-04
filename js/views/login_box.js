@@ -1,5 +1,5 @@
 function createTextArea(path) {
-  return SC.TextField.extend({
+  return Ember.TextField.extend({
     init: function() {
       this._super();
       this.setPath(path, this);
@@ -7,14 +7,14 @@ function createTextArea(path) {
   });
 }
 
-App.LoginBox = SC.View.extend({
+App.LoginBox = Ember.View.extend({
   tagName: "div",
   elementId: "login-box",
   classNames: ["message-box"],
 
   isVisibleBinding: 'App.appController.loginBoxIsVisible',
 
-  LoginForm: SC.View.extend({
+  LoginForm: Ember.View.extend({
     tagName: "form",
 
     loginField: null,

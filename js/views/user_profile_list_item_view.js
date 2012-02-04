@@ -1,4 +1,4 @@
-App.UserProfileListItemView = SC.View.extend({
+App.UserProfileListItemView = Ember.View.extend({
   tagName: 'li',
   templateName: 'user-profile-list-item-view',
   classNameBindings: ['isSelected'],

@@ -1,4 +1,4 @@
-App.userProfilesController = SC.ArrayProxy.create({
+App.userProfilesController = Ember.ArrayProxy.create({
   content: [
     App.UserProfile.create({firstName: "fa", lastName: "la", email: "ea", phone: "pa"}), 
     App.UserProfile.create({firstName: "fb", lastName: "lb", email: "eb", phone: "pb"}) 

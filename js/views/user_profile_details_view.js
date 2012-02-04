@@ -1,4 +1,4 @@
-App.UserProfileDetailsView = SC.View.extend({
+App.UserProfileDetailsView = Ember.View.extend({
   selectedUserProfileBinding: "App.selectedUserProfileController.content",
 
   userName: function() {

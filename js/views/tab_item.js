@@ -1,4 +1,4 @@
-App.TabItem = SC.View.extend({
+App.TabItem = Ember.View.extend({
   tagName: 'li',
   tabName: null,
   classNameBindings: ['isActive'],

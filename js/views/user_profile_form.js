@@ -1,5 +1,5 @@
 function createTextArea(path) {
-  return SC.TextField.extend({
+  return Ember.TextField.extend({
     init: function() {
       this._super();
       this.setPath(path, this);
@@ -7,7 +7,7 @@ function createTextArea(path) {
   });
 }
 
-App.UserProfileForm = SC.View.extend({
+App.UserProfileForm = Ember.View.extend({
   tagName: 'form',
 
   firstNameArea: null,
