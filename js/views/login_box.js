@@ -1,3 +1,12 @@
+function createTextArea(path) {
+  return SC.TextField.extend({
+    init: function() {
+      this._super();
+      this.setPath(path, this);
+    }
+  });
+}
+
 App.LoginBox = SC.View.extend({
   tagName: "div",
   elementId: "login-box",
@@ -11,21 +20,11 @@ App.LoginBox = SC.View.extend({
     loginField: null,
     passowrdField: null,
     
-    LoginField: SC.TextField.extend({
-      init: function() {
-        this._super();
-        this.setPath('parentView.loginField', this);
-      }
-    }),
-    PasswordField: SC.TextField.extend({
-      init: function() {
-        this._super();
-        this.setPath('parentView.passowrdField', this);
-      }
-    }),
+    LoginField: createTextArea('parentView.loginField'),
+    PasswordField: createTextArea('parentView.passowrdField'),
   
     submit: function(event) {
-      alert(this.getPath('loginField.value'));  
+      alert(this.getPath('loginField.value') + this.getPath('passowrdField.value'));  
 
       return false;
     }

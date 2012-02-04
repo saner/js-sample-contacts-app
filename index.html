@@ -23,8 +23,8 @@
 <body>
   <div id="wrapper">
     <div id="login-panel">
-      <a href="" class="button">Login</a>
-      <a href="" class="button">Register</a>
+      <a href="#" class="button">Login</a>
+      <a href="#" class="button">Register</a>
     </div>
 
     <div id="content">
@@ -67,19 +67,19 @@
             {{#view App.ContactsContent}}
               <div id="contacts">
                 <div id="list">
-                  {{collection contentBinding="App.userProfilesController" tagName="ul" itemViewClass="App.UserProfileView" }}
+                  {{collection contentBinding="App.userProfilesController" tagName="ul" itemViewClass="App.UserProfileListItemView" }}
                 </div>
                 <div id="content">
                   {{#view  App.UserProfileDetailsView}}
                     {{#if selectedUserProfile}}
                       <h3>{{userName}}</h3>
                       {{#with selectedUserProfile}}
-                      <table>
-                        <tr><td> First name:</td><td>{{firstName}}</td></tr>
-                        <tr><td> Last name:</td><td>{{lastName}}</td></tr>
-                        <tr><td> Email:</td><td>{{email}}</td></tr>
-                        <tr><td> Phone:</td><td>{{phone}}</td></tr>
-                      </table>
+                        <table>
+                          <tr><td> First name:</td><td>{{firstName}}</td></tr>
+                          <tr><td> Last name:</td><td>{{lastName}}</td></tr>
+                          <tr><td> Email:</td><td>{{email}}</td></tr>
+                          <tr><td> Phone:</td><td>{{phone}}</td></tr>
+                        </table>
                       {{/with}}
                     {{/if}}
                   {{/view}}
@@ -104,7 +104,7 @@
     </div>
   </div>
 
-  <script type="text/x-handlebars" data-template-name="user-profile-view">
+  <script type="text/x-handlebars" data-template-name="user-profile-list-item-view">
       {{userName}}
   </script>
 
@@ -119,7 +119,7 @@
   <script src="js/models/user_profile.js"></script>
   <!-- views -->
   <script src="js/views/user_profile_details_view.js"></script>
-  <script src="js/views/user_profile_view.js"></script>
+  <script src="js/views/user_profile_list_item_view.js"></script>
   <script src="js/views/user_profile_form.js"></script>
   <script src="js/views/tab_item.js"></script>
   <script src="js/views/login_box.js"></script>

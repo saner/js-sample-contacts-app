@@ -12,6 +12,10 @@ App.userProfilesController = SC.ArrayProxy.create({
       phone: phone
     });
     this.pushObject(userProfile);
+  },
+
+  deleteUserProfile: function(userProfile) {
+    this.removeObject(userProfile);
   }
   
 });

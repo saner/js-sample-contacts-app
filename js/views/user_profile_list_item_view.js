@@ -1,7 +1,7 @@
-App.UserProfileView = SC.View.extend({
+App.UserProfileListItemView = SC.View.extend({
   tagName: 'li',
-  templateName: 'user-profile-view',
-  classNameBindings: ['isSelected:selected'],
+  templateName: 'user-profile-list-item-view',
+  classNameBindings: ['isSelected'],
 
   click: function() {
     App.selectedUserProfileController.set('content', this.get('content'));

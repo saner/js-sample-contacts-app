@@ -1,7 +1,7 @@
 App.TabItem = SC.View.extend({
   tagName: 'li',
   tabName: null,
-  //classNameBindings: ['isActive:active'],
+  classNameBindings: ['isActive'],
 
   selectedTabBinding: "App.appController.selectedTab",
 
@@ -14,15 +14,3 @@ App.TabItem = SC.View.extend({
   }.property('selectedTab').cacheable()
 
 });
-
-/*
-App.BaseContent = SC.View.extend({
-  tagName: "div",
-
-  selectedTabBinding: "App.appController.selectedTab",
-
-  isVisible: function() {
-    return this.get('elementId') == this.get('selectedTab');
-  }.property('selectedTab').cacheable()
-});
-*/
