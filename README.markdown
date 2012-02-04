@@ -1,7 +1,12 @@
-sc2-ror-sample-contacts
+js-sample-contacts-app
 =======================
 
-Sample SproutCore 2.0 application with Ruby on Rails backend.
+Sample JavaScript application with backend.
+
+Technologies:
+-------------
+  * Ember.js
+  * Ruby on Rails 3
 
 Todo:
 -----
