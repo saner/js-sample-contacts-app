@@ -3,6 +3,10 @@ App.UserProfileDetailsView = Ember.View.extend({
 
   userName: function() {
     return this.getPath('selectedUserProfile.firstName') + " " + this.getPath('selectedUserProfile.lastName');
-  }.property('selectedUserProfile.firstName', 'selectedUserProfile.lastName').cacheable()
+  }.property('selectedUserProfile.firstName', 'selectedUserProfile.lastName').cacheable(),
+
+  deleteContact: function() {
+    App.userProfilesController.deleteUserProfile(this.getPath('selectedUserProfile'));
+  }
 
 });

@@ -22,9 +22,9 @@
 </head>
 <body>
   <div id="wrapper">
-    <div id="login-panel">
-      <a href="#" class="button">Login</a>
-      <a href="#" class="button">Register</a>
+    <div id="top-panel">
+      <a href="#" class="link">Login</a>
+      <a href="#" class="link">Register</a>
     </div>
 
     <div id="content">
@@ -54,7 +54,7 @@
       </script>
 
       <div id="tabs">
-        <div id="list">
+        <div id="buttons">
           <ul>
           <script type="text/x-handlebars">
             {{#view App.TabItem tabName="ContactsContent"}}<a href="#">Contacts</a>{{/view}}
@@ -74,13 +74,17 @@
                     {{#if selectedUserProfile}}
                       <h3>{{userName}}</h3>
                       {{#with selectedUserProfile}}
-                        <table>
-                          <tr><td> First name:</td><td>{{firstName}}</td></tr>
-                          <tr><td> Last name:</td><td>{{lastName}}</td></tr>
-                          <tr><td> Email:</td><td>{{email}}</td></tr>
-                          <tr><td> Phone:</td><td>{{phone}}</td></tr>
+                        <table class="tbl-contacts">
+                          <tr><td class="tbl-label">First name:</td><td>{{firstName}}</td></tr>
+                          <tr><td class="tbl-label">Last name:</td><td>{{lastName}}</td></tr>
+                          <tr><td class="tbl-label">Email:</td><td>{{email}}</td></tr>
+                          <tr><td class="tbl-label">Phone:</td><td>{{phone}}</td></tr>
                         </table>
                       {{/with}}
+                      <div class="button-panel">
+                        <a href="#" {{action "editContact"}} class="button">Edit</a>
+                        <a href="#" {{action "deleteContact"}} class="button">Delete</a>
+                      </div>
                     {{/if}}
                   {{/view}}
                 </div>
@@ -93,7 +97,9 @@
                   <label>Last name: </label>{{view LastNameArea}} <br />
                   <label>Email: </label>{{view EmailNameArea}} <br />
                   <label>Phone: </label>{{view PhoneNameArea}} <br />
-                  <input type="submit" value="Add contact">
+                  <div class="button-panel">
+                    <a href="#" {{action "submit"}} class="button submit">Add contact</a>
+                  </div>
                 {{/view}}
               </div>
             {{/view}}

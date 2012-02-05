@@ -1,17 +1,17 @@
 #wrapper {
 	width: 900px;
 	margin: 0px auto;
-	box-shadow: 0px 2px 6px Gray;
+	box-shadow: 0px 2px 4px Gray;
 }
 
-#login-panel {
+#top-panel {
 	background-color: #3A3A3A;
 	overflow: hidden;
 	padding: 0px 10px;
-	box-shadow: 0px 3px 5px Gray;
+  margin: 0px -1px;
 }
 
-#login-panel .button {
+#top-panel .link {
 	float:right;
 	display: inline-block;
 	padding: 10px;
@@ -19,7 +19,7 @@
 	text-decoration: None;
 }
 
-#login-panel .button:hover {
+#top-panel .link:hover {
 	color: Red;
 }
 
@@ -71,21 +71,25 @@
 	margin: 50px 0px 0px 0px;
 }
 
-#tabs #list ul {
+#tabs #buttons ul {
+  border-bottom: 1px solid LightBlue;
+}
+
+#tabs #list ul, #tabs #buttons ul {
 	list-style: none;
   margin: 0px 10px;
 }
 
-#tabs #list ul li {
+#tabs #list ul li, #tabs #buttons ul li {
 	display: inline-block;
 }
 
-#tabs #list ul li.is-active {
+#tabs #list ul li.is-active, #tabs #buttons ul li.is-active {
   border: 1px solid LightBlue;
   background-color: LightBlue;
 }
 
-#tabs #list ul li a {
+#tabs #list ul li a, #tabs #buttons ul li a {
 	text-decoration: none;
 	display: block;
 	padding: 5px 10px;
@@ -105,8 +109,10 @@
 	width: 200px;
 }
 
-#contacts #list ul li {
+#contacts #list ul {
   margin-right: 20px;
+  border: 1px solid LightBlue;
+  padding: 1px;
 }
 
 #contacts #list ul li {
@@ -143,8 +149,7 @@
 	width: 600px;
 }
 
-#new-contact label,
-#new-contact input[type="text"] {
+#new-contact label, #new-contact input[type="text"] {
 	width: 200px;
 	display: block;
 	float: left;
@@ -160,7 +165,39 @@
 	clear: left;
 }
 
-#new-contact input[type="submit"] {
+#new-contact input[type="submit"], a.button.submit {
 	margin-left: 330px;
 }
 
+div.button-panel {
+  margin: 5px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+a.button {
+  box-shadow: 0px 0px 5px Gray;
+  border-radius: 2px;
+  text-decoration: none;
+  padding: 2px 4px;
+  float: left;
+  display: block;
+  margin: 3px 10px 3px 0px;
+}
+
+.tbl-contacts tr {
+  height: 22px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.tbl-contacts td.tbl-label {
+  width: 200px;
+  text-align: right;
+}
+
+#contacts .button-panel {
+  border: 1px solid LightBlue;
+  width: 300px;
+  text-align: right;
+}
